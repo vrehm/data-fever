@@ -16,9 +16,8 @@
       "min": 0,
       "default": 0
     },
-    "Code": {
+    "zipcode": {
       "type": "biginteger",
-      "required": true,
       "default": "75000"
     }
   }

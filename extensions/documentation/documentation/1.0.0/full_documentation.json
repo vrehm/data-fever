@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "03/14/2020 12:58:14 PM"
+    "x-generation-date": "03/14/2020 4:22:24 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2716,8 +2716,7 @@
       "Temperature": {
         "required": [
           "id",
-          "value",
-          "Code"
+          "value"
         ],
         "properties": {
           "id": {
@@ -2727,7 +2726,7 @@
             "type": "number",
             "default": 0
           },
-          "Code": {
+          "zipcode": {
             "type": "integer",
             "default": "75000"
           }
@@ -2735,15 +2734,14 @@
       },
       "NewTemperature": {
         "required": [
-          "value",
-          "Code"
+          "value"
         ],
         "properties": {
           "value": {
             "type": "number",
             "default": 0
           },
-          "Code": {
+          "zipcode": {
             "type": "integer",
             "default": "75000"
           }

@@ -517,8 +517,7 @@
       "Temperature": {
         "required": [
           "id",
-          "value",
-          "Code"
+          "value"
         ],
         "properties": {
           "id": {
@@ -528,7 +527,7 @@
             "type": "number",
             "default": 0
           },
-          "Code": {
+          "zipcode": {
             "type": "integer",
             "default": "75000"
           }
@@ -536,15 +535,14 @@
       },
       "NewTemperature": {
         "required": [
-          "value",
-          "Code"
+          "value"
         ],
         "properties": {
           "value": {
             "type": "number",
             "default": 0
           },
-          "Code": {
+          "zipcode": {
             "type": "integer",
             "default": "75000"
           }
