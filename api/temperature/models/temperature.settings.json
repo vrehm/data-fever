@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "temperatures",
+  "info": {
+    "name": "Temperature"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "value": {
+      "type": "decimal",
+      "required": true,
+      "min": 0,
+      "default": 0
+    },
+    "Code": {
+      "type": "biginteger",
+      "required": true,
+      "default": "75000"
+    }
+  }
+}
