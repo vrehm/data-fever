@@ -18,7 +18,8 @@
     },
     "zipcode": {
       "type": "biginteger",
-      "default": "75000"
+      "default": "75000",
+      "required": true
     }
   }
 }

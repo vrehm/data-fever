@@ -517,7 +517,8 @@
       "Temperature": {
         "required": [
           "id",
-          "value"
+          "value",
+          "zipcode"
         ],
         "properties": {
           "id": {
@@ -535,7 +536,8 @@
       },
       "NewTemperature": {
         "required": [
-          "value"
+          "value",
+          "zipcode"
         ],
         "properties": {
           "value": {
