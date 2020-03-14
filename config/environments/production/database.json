@@ -1,17 +1,24 @@
 {
-  "defaultConnection": "default",
-  "connections": {
-    "default": {
-      "connector": "bookshelf",
-      "settings": {
-        "client": "postgres",
-        "host": "${process.env.DATABASE_HOST || '127.0.0.1'}",
-        "port": "${process.env.DATABASE_PORT || 27017}",
-        "database": "${process.env.DATABASE_NAME || 'strapi'}",
-        "username": "${process.env.DATABASE_USERNAME || ''}",
-        "password": "${process.env.DATABASE_PASSWORD || ''}"
-      },
-      "options": {}
+    "defaultConnection": "default",
+    "connections": {
+        "default": {
+            "connector": "bookshelf",
+            "settings": {
+                "client": "postgres",
+                "host": "${process.env.POSTGRESQL_ADDON_HOST}",
+                "port": "${process.env.POSTGRESQL_ADDON_PORT}",
+                "database": "${process.env.POSTGRESQL_ADDON_DB}",
+                "username": "${process.env.POSTGRESQL_ADDON_USER}",
+                "password": "${process.env.POSTGRESQL_ADDON_PASSWORD}",
+                "schema": "public"
+            },
+            "options": {
+                "debug": false,
+                "pool": {
+                    "min": 0,
+                    "max": 5
+                }
+            }
+        }
     }
-  }
 }
