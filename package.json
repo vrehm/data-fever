@@ -10,7 +10,7 @@
         "strapi": "strapi"
     },
     "devDependencies": {
-        "minimist": ">=1.2.2"
+        "minimist": ">=1.2.6"
     },
     "dependencies": {
         "knex": "<0.20.0",
